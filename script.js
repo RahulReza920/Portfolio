@@ -1,6 +1,8 @@
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
 
+var video = document.getElementById("myVideo");
+
 // window.onscroll = function() {
 //     var top = window.scrollY;
 //     if(top >=100) {
@@ -33,3 +35,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const hireMeButton = document.querySelector('.anchor-button');
+
+    hireMeButton.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scroll({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
