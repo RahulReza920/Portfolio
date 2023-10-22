@@ -97,8 +97,8 @@
 }
 
 
-
-/* .anchor-button{
+/* 
+.anchor-button{
     text-decoration: none;
     background: linear-gradient(45deg, lightsalmon, tomato);
     padding: 10px 40px;
@@ -127,10 +127,23 @@
     transform: scale(1.05);
 }
 
+/* .anchor-button {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 40px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-
-
-
+.anchor-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+} */
 
 
 

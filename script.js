@@ -1,5 +1,6 @@
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
+header.classList.add('navbarDark');
 
 var video = document.getElementById("myVideo");
 
@@ -13,7 +14,7 @@ var video = document.getElementById("myVideo");
 //     }
 // }
 
-header.classList.add('navbarDark');
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var heroTitle = "Hello, I'm Rahul";
@@ -34,19 +35,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    const hireMeButton = document.querySelector('.anchor-button');
-
-    hireMeButton.addEventListener('click', function(event) {
-        event.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        window.scroll({
-            top: targetElement.offsetTop,
-            behavior: 'smooth'
-        });
-    });
-});
